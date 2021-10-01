@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/stock.js"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./img/logo_argos2x.png" alt="logo">
+                </div>
+                <div class="site-navigation">
+                    <form class="header-form">
+                        <input type="text" placeholder="Search products, brands or FAQs">
+                        <button type="button" class="search-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20px" height="20px" class="_1YieH"><path d="M15.03 16.09a8.25 8.25 0 1 1 1.06-1.06l6.19 6.19a.75.75 0 0 1-1.06 1.06l-6.19-6.19zm-5.28.41a6.75 6.75 0 1 0 0-13.5 6.75 6.75 0 0 0 0 13.5z"></path></svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="header__navigation">
+                    <div class="header__navigation-item hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="1em" height="1em" class="UwMfe"><path d="M3.75 5.25h16.5a.75.75 0 1 1 0 1.5H3.75a.75.75 0 0 1 0-1.5zm0 6h16.5a.75.75 0 1 1 0 1.5H3.75a.75.75 0 1 1 0-1.5zm0 6h16.5a.75.75 0 1 1 0 1.5H3.75a.75.75 0 1 1 0-1.5z"></path></svg>
+                        <span>Shop</span>
+                    </div>
+                    <div class="header__navigation-item wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="1em" height="1em" class="UwMfe"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                        <span>Wishlist</span>
+                    </div>
+
+                    <div class="header__navigation-item cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="1em" height="1em" class="UwMfe"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                        <span>Trolley</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="offerwall">
+            <div class="container">
+                <div class="offerwall__content">
+                    <div class="offerwall__item" id="iphone12">
+                        <div class="offerwall__img">
+                            <img src="./img/iphone12-item.png" type="image/webp" class="main_img" alt="Iphone12">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>SIM Free iPhone 12 Pro Max 512GB 5G Mobile Phone - Graphite</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(11)</span>
+                        </div>
+                        <h3 class="offerwall__stock green_text animate__animated">
+                            <span class="offerwall__stock-number stock_1"></span> in stock.
+                        </h3>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;1399.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;35.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item" id="samsungs20">
+                        <div class="offerwall__img">
+                            <img src="./img/smgS20+.png" type="image/webp" class="main_img" alt="SamsungS20+">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>SIM Free Samsung Galaxy S20+ 5G 128GB Mobile Phone - Black</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(15)</span>
+                        </div>
+                        <h3 class="offerwall__stock green_text animate__animated">
+                            <span class="offerwall__stock-number stock_2"></span> in stock.
+                        </h3>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;999.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;22.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item" id="applewatchs5">
+                        <div class="offerwall__img">
+                            <img src="./img/applewatchS5.png" type="image/webp" class="main_img" alt="AppleWatchS5">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>Apple Watch S5 Cellular 44mm Space Grey Alu/ Black Band</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(5)</span>
+                        </div>
+                        <h3 class="offerwall__stock green_text animate__animated">
+                            <span class="offerwall__stock-number stock_3"></span> in stock.
+                        </h3>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;529.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;16.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item stock_out" id="samsungwatch">
+                        <div class="offerwall__img">
+                            <img src="./img/smg-watch.png" type="image/webp" class="main_img" alt="smgwatch">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>Samsung Galaxy 46mm Smart Watch - Silver</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(8)</span>
+                        </div>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;279.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;9.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item" id="macbookpro">
+                        <div class="offerwall__img">
+                            <img src="./img/macbookpro2020.png" type="image/webp" class="main_img" alt="Iphone12">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>Apple MacBook Pro 2020 13in i5 16GB 512GB - Space Grey</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(18)</span>
+                        </div>
+                        <h3 class="offerwall__stock green_text animate__animated">
+                            <span class="offerwall__stock-number stock_3"></span> in stock.
+                        </h3>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;1799.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;42.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item" id="ipadpro">
+                        <div class="offerwall__img">
+                            <img src="./img/ipadpro2020.png" type="image/webp" class="main_img" alt="Iphone12">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>Apple iPad Pro 2020 12.9 Inch Wi-Fi 128GB - Silver</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(14)</span>
+                        </div>
+                        <h3 class="offerwall__stock green_text animate__animated">
+                            <span class="offerwall__stock-number stock_2"></span> in stock.
+                        </h3>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;969.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;19.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="offerwall__item stock_out" id="smarttv4k">
+                        <div class="offerwall__img">
+                            <img src="./img/samsungtv4k.png" type="image/webp" class="main_img" alt="Iphone12">
+                            <div class="offerwall__wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="offerwall__special">
+                            <span>Special offer</span>
+                        </div>
+                        <div class="offerwall__info">
+                            <p>Samsung 65 Inch QE65Q70TATXXU Smart 4K UHD QLED TV</p>
+                        </div>
+                        <div class="offerwall__rating">
+                            <div class="offerwall__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#48a3c6" width="17px" height="15px"><path d="M12 18.472l-5.382 2.83a.75.75 0 0 1-1.088-.79l1.028-5.994-4.354-4.244a.75.75 0 0 1 .415-1.28l6.017-.873 2.691-5.453a.75.75 0 0 1 1.346 0l2.69 5.453 6.018.874a.75.75 0 0 1 .415 1.28l-4.354 4.243 1.028 5.993a.75.75 0 0 1-1.088.79L12 18.473z"></path></svg>
+                            </div>
+                            <span class="offerwall__review-count">(7)</span>
+                        </div>
+                        <div class="offerwall__price old_price">
+                            <span>&dollar;1399.00</span>
+                        </div>
+                        <div class="offerwall__price special_price">
+                            <span>&dollar;32.99</span>
+                        </div>
+                        <div class="offerwall__add">
+                            <button class="btn btn-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="16px" height="16px"><path d="M6.229 4.5H21.75a.75.75 0 0 1 .735.897l-1.5 7.5a.75.75 0 0 1-.735.603H7.129l.3 3H18.75a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.746-.675L4.57 3H2.25a.75.75 0 0 1 0-1.5h3a.75.75 0 0 1 .746.675L6.23 4.5zm.15 1.5l.6 6h12.656l1.2-6H6.38zM7.5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm10.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="preloader">
+            <img src="./img/preloader.gif" alt="preloader">
+        </div>
+
+        <div class="scroll_top">
+            <button class="btn-scrolltop">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="24" height="24"><path d="M12 9.31l6.97 6.97a.75.75 0 0 0 1.06-1.06l-7.5-7.5a.75.75 0 0 0-1.06 0l-7.5 7.5a.75.75 0 0 0 1.06 1.06L12 9.31z"></path></svg>
+            </button>
+        </div>
+
+        <div class="modal modal-main">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Sorry, this item is now out of stock, please select another item.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ok" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="cart">
+            <div class="container">
+                <div class="cart__content">
+                    <div class="cart__left-col">
+                        <h2 class="cart__product"></h2>
+                        <div class="cart__rating">
+                            <div class="cart__stars"></div>
+                            <a href="https://www.google.com" class="cart__link">Read reviews (<span class="cart__reviews"></span>)</a>
+                        </div>
+                        <div class="cart__img">
+                            <img src="" alt="cartImg">
+                        </div>
+                    </div>
+                    <div class="cart__right-col">
+                        <h2 class="cart__price"></h2>
+                        <div class="cart__credit">
+                            <div class="cart__credit_info">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="24" height="24"><path d="M3 4.5h18A1.5 1.5 0 0 1 22.5 6v12a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 18V6A1.5 1.5 0 0 1 3 4.5zM3 6v12h18V6H3zm6.185 8.901s2.271 1.294 5.537 0c0 0 .114-.038.167.012.053.05.022.084-.034.124-.056.04-2.885 2.157-5.835-.017 0 0-.054-.059.014-.133 0 0 .05-.039.151.014zM15 14.164s.016.206-.225.206h-.944s-.213-.005-.223-.19c-.01-.187-.046-1.13-.046-1.13H11.27l-.648 1.106s-.097.214-.296.214H9.25s-.23-.03-.14-.28c0 0 2.537-4.424 3.723-5.818 0 0 .172-.272.827-.272h.728s.303 0 .315.316c.012.315.296 5.848.296 5.848zm-3.211-2.22h1.792l-.112-2.522c-.013-.052-.055 0-.055 0-.477.604-1.625 2.522-1.625 2.522z"></path></svg>
+                                <span>Credit plans available</span>
+                            </div>
+                            <a href="https://www.google.com" class="cart__link">See options</a>
+                        </div>
+                        <div class="cart__nectar">
+                            <div class="cart__nectar-info">
+                                <img src="./img/NectarNew.png" alt="nectar">
+                                <span>Collect <span class="nectar_points"></span> points</span>
+                            </div>
+                            <a href="https://www.google.com" class="cart__link">Find out more</a>
+                        </div>
+                        <div class="cart__accessories">
+                            <div class="cart__special-number">3</div>
+                            <a href="https://www.google.com" class="cart__link">Accessories for your <span class="cart__category"></span></a>
+                        </div>
+                        <div class="cart__colours">
+                            <p class="cart__colour-info">Colour: <span class="cart__colour-name"></span></p>
+                            <ul class="cart__colour-menu"></ul>
+                        </div>
+                        <div class="cart__buy">
+                            <div class="cart__quantity">
+                                <div class="styled-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333" width="24" height="24"><path d="M12 14.69L5.03 7.72a.75.75 0 0 0-1.06 1.06l7.5 7.5a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 0 0-1.06-1.06L12 14.69z"></path></svg>
+                                    <select name="quantity" id="product__quantity"></select>
+                                </div>
+
+                            </div>
+                            <a href="https://www.google.com" class="btn btn_buy">Add to trolley</a>
+                        </div>
+                        <div class="cart__wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d42114" width="24px" height="24px" class="wishlist-checkbox__icon"><path d="M21.6 5.55l.07.115c2.73 5.458-.506 10.582-9.32 15.248a.75.75 0 0 1-.7 0C2.835 16.247-.4 11.123 2.33 5.665l.073-.119C4.83 2.351 8.86 2.182 12.006 4.97c3.221-2.796 7.185-2.625 9.594.58zm-1.24.847c-1.968-2.56-5.154-2.542-7.83.133a.75.75 0 0 1-1.068-.007C8.88 3.866 5.628 3.843 3.64 6.399c-2.182 4.453.483 8.748 8.36 13 7.878-4.253 10.543-8.548 8.36-13.002z"></path></svg>
+                            <a href="https://www.google.com" class="cart__link">Add to Your Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__about">
+                    <div class="cart__about-content">
+                        <h2 class="cart__about-title">About this product</h2>
+                        <div class="cart__about-text"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="secure-area">
+                    <p>© Argos Limited 2021. All Rights Reserved. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

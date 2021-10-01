@@ -1,0 +1,9 @@
+@font-face {
+    font-family: barlow-regular;
+    src: url(../fonts/BarlowReg.woff2);
+}
+
+@font-face {
+    font-family: barlow-bold;
+    src: url(../fonts/BarlowBold.woff2);
+}
